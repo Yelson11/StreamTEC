@@ -16,6 +16,7 @@ public class windowRegister extends javax.swing.JFrame {
      */
     public windowRegister() {
         initComponents();
+        this.setLocationRelativeTo(null);
         
         //Para que no sea permitido brincarse los pasos
         //this.jTabbedPane.setEnabledAt(1, false);
@@ -49,20 +50,44 @@ public class windowRegister extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnBack1 = new javax.swing.JButton();
+        btnContinue1 = new javax.swing.JButton();
         jPanelService = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        btnBack2 = new javax.swing.JButton();
+        btnContinue2 = new javax.swing.JButton();
+        rdBtnPremium = new javax.swing.JRadioButton();
+        rdBtnVideo = new javax.swing.JRadioButton();
+        rdBtnMusic = new javax.swing.JRadioButton();
+        rdBtnBasic = new javax.swing.JRadioButton();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
         jPanelPay = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        btnBack3 = new javax.swing.JButton();
+        btnContinue3 = new javax.swing.JButton();
+        jLabel16 = new javax.swing.JLabel();
+        txtName1 = new javax.swing.JTextField();
+        jMonthChooser1 = new com.toedter.calendar.JMonthChooser();
+        jYearChooser1 = new com.toedter.calendar.JYearChooser();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        txtName2 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
         btnQuestions = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        btnLogin = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
 
         jButton2.setText("jButton2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         jPanel1.setBackground(new java.awt.Color(17, 31, 77));
         jPanel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
@@ -89,7 +114,6 @@ public class windowRegister extends javax.swing.JFrame {
         });
         jPanelUser.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 170, 30));
         txtName.getAccessibleContext().setAccessibleName("");
-        txtName.getAccessibleContext().setAccessibleDescription("");
 
         jPanelUser.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 200, 30));
         jPanelUser.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, 150, 30));
@@ -131,45 +155,129 @@ public class windowRegister extends javax.swing.JFrame {
         jLabel9.setText("Fecha de Nacimiento:");
         jPanelUser.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 30));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(17, 31, 77));
-        jButton1.setText("REGRESAR");
-        jPanelUser.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
+        btnBack1.setBackground(new java.awt.Color(204, 204, 204));
+        btnBack1.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnBack1.setForeground(new java.awt.Color(17, 31, 77));
+        btnBack1.setText("REGRESAR");
+        jPanelUser.add(btnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
 
-        jButton3.setBackground(new java.awt.Color(17, 31, 77));
-        jButton3.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(242, 244, 247));
-        jButton3.setText("CONTINUAR");
-        jPanelUser.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
+        btnContinue1.setBackground(new java.awt.Color(17, 31, 77));
+        btnContinue1.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnContinue1.setForeground(new java.awt.Color(242, 244, 247));
+        btnContinue1.setText("CONTINUAR");
+        jPanelUser.add(btnContinue1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
 
         jTabbedPane.addTab("Paso 1 ", jPanelUser);
 
         jPanelService.setBackground(new java.awt.Color(242, 244, 247));
+        jPanelService.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanelServiceLayout = new javax.swing.GroupLayout(jPanelService);
-        jPanelService.setLayout(jPanelServiceLayout);
-        jPanelServiceLayout.setHorizontalGroup(
-            jPanelServiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 621, Short.MAX_VALUE)
-        );
-        jPanelServiceLayout.setVerticalGroup(
-            jPanelServiceLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 458, Short.MAX_VALUE)
-        );
+        jLabel10.setFont(new java.awt.Font("Corbel", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(17, 31, 77));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel10.setText("PLAN IDEAL");
+        jPanelService.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        btnBack2.setBackground(new java.awt.Color(204, 204, 204));
+        btnBack2.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnBack2.setForeground(new java.awt.Color(17, 31, 77));
+        btnBack2.setText("REGRESAR");
+        jPanelService.add(btnBack2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
+
+        btnContinue2.setBackground(new java.awt.Color(17, 31, 77));
+        btnContinue2.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnContinue2.setForeground(new java.awt.Color(242, 244, 247));
+        btnContinue2.setText("CONTINUAR");
+        jPanelService.add(btnContinue2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
+
+        rdBtnPremium.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        rdBtnPremium.setText("Premium");
+        jPanelService.add(rdBtnPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
+
+        rdBtnVideo.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        rdBtnVideo.setText("Estándar Video");
+        rdBtnVideo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdBtnVideoActionPerformed(evt);
+            }
+        });
+        jPanelService.add(rdBtnVideo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
+
+        rdBtnMusic.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        rdBtnMusic.setText("Estándar Música");
+        jPanelService.add(rdBtnMusic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
+
+        rdBtnBasic.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
+        rdBtnBasic.setText("Básico");
+        jPanelService.add(rdBtnBasic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+
+        jLabel12.setText("La mejor plataforma de videos en HD por tan solo $13 mensuales");
+        jPanelService.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
+
+        jLabel13.setText("Musica y videos, todo en HD, juntos en una misma plataforma por tan solo $15 mensuales.");
+        jPanelService.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
+
+        jLabel14.setText("Musica y videos a tu gusto, lleva sólo aquello que tú quieras por $8 mensuales.");
+        jPanelService.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
+
+        jLabel15.setText("Musica de la mejor calidad, lleva a tus artistas favoritos por tan solo $10 mensuales.");
+        jPanelService.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
 
         jTabbedPane.addTab("Paso 2 ", jPanelService);
 
-        javax.swing.GroupLayout jPanelPayLayout = new javax.swing.GroupLayout(jPanelPay);
-        jPanelPay.setLayout(jPanelPayLayout);
-        jPanelPayLayout.setHorizontalGroup(
-            jPanelPayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 621, Short.MAX_VALUE)
-        );
-        jPanelPayLayout.setVerticalGroup(
-            jPanelPayLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 458, Short.MAX_VALUE)
-        );
+        jPanelPay.setBackground(new java.awt.Color(242, 244, 247));
+        jPanelPay.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel11.setFont(new java.awt.Font("Corbel", 1, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(17, 31, 77));
+        jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel11.setText("DATOS DE PAGO");
+        jPanelPay.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, -1, -1));
+
+        btnBack3.setBackground(new java.awt.Color(204, 204, 204));
+        btnBack3.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnBack3.setForeground(new java.awt.Color(17, 31, 77));
+        btnBack3.setText("REGRESAR");
+        jPanelPay.add(btnBack3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
+
+        btnContinue3.setBackground(new java.awt.Color(17, 31, 77));
+        btnContinue3.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnContinue3.setForeground(new java.awt.Color(242, 244, 247));
+        btnContinue3.setText("CONTINUAR");
+        jPanelPay.add(btnContinue3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
+
+        jLabel16.setFont(new java.awt.Font("Corbel", 0, 18)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel16.setText("Fecha de Vencimiento:");
+        jPanelPay.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 30));
+
+        txtName1.setToolTipText("");
+        txtName1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtName1ActionPerformed(evt);
+            }
+        });
+        jPanelPay.add(txtName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 380, 30));
+        jPanelPay.add(jMonthChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, -1, 30));
+        jPanelPay.add(jYearChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 60, 30));
+
+        jLabel17.setFont(new java.awt.Font("Corbel", 0, 18)); // NOI18N
+        jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel17.setText("Número de Tarjeta:");
+        jPanelPay.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 150, 30));
+
+        jLabel18.setFont(new java.awt.Font("Corbel", 0, 18)); // NOI18N
+        jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jLabel18.setText("CVV:");
+        jPanelPay.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 40, 30));
+
+        txtName2.setToolTipText("");
+        txtName2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtName2ActionPerformed(evt);
+            }
+        });
+        jPanelPay.add(txtName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 70, 30));
 
         jTabbedPane.addTab("Paso 3 ", jPanelPay);
 
@@ -199,6 +307,23 @@ public class windowRegister extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/logo2.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
+        btnLogin.setBackground(new java.awt.Color(17, 31, 77));
+        btnLogin.setFont(new java.awt.Font("Corbel", 0, 12)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setText("INICIAR SESIÓN");
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 110, -1));
+
+        btnExit.setBackground(new java.awt.Color(102, 0, 0));
+        btnExit.setFont(new java.awt.Font("Corbel", 1, 11)); // NOI18N
+        btnExit.setForeground(new java.awt.Color(255, 255, 255));
+        btnExit.setText("X");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 40, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -220,6 +345,23 @@ public class windowRegister extends javax.swing.JFrame {
     private void txtLastNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtLastNameActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtLastNameActionPerformed
+
+    private void rdBtnVideoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdBtnVideoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rdBtnVideoActionPerformed
+
+    private void txtName1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtName1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtName1ActionPerformed
+
+    private void txtName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtName2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtName2ActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+        System.exit(0);
+    }//GEN-LAST:event_btnExitActionPerformed
 
     /**
      * @param args the command line arguments
@@ -257,12 +399,27 @@ public class windowRegister extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBack1;
+    private javax.swing.JButton btnBack2;
+    private javax.swing.JButton btnBack3;
+    private javax.swing.JButton btnContinue1;
+    private javax.swing.JButton btnContinue2;
+    private javax.swing.JButton btnContinue3;
+    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnQuestions;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -271,6 +428,7 @@ public class windowRegister extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private com.toedter.calendar.JMonthChooser jMonthChooser1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanelPay;
@@ -279,10 +437,17 @@ public class windowRegister extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane;
     private javax.swing.JTextPane jTextPane1;
+    private com.toedter.calendar.JYearChooser jYearChooser1;
+    private javax.swing.JRadioButton rdBtnBasic;
+    private javax.swing.JRadioButton rdBtnMusic;
+    private javax.swing.JRadioButton rdBtnPremium;
+    private javax.swing.JRadioButton rdBtnVideo;
     private javax.swing.JPasswordField txtConfirmPassword;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JTextField txtLastName;
     private javax.swing.JTextField txtName;
+    private javax.swing.JTextField txtName1;
+    private javax.swing.JTextField txtName2;
     private javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
 }
