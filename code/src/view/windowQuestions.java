@@ -34,12 +34,13 @@ public class windowQuestions extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        btnBack = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         btnExit1 = new javax.swing.JButton();
+        btnRegister = new javax.swing.JButton();
+        btnLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -50,6 +51,7 @@ public class windowQuestions extends javax.swing.JFrame {
         btnExit.setFont(new java.awt.Font("Corbel", 1, 11)); // NOI18N
         btnExit.setForeground(new java.awt.Color(255, 255, 255));
         btnExit.setText("X");
+        btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
@@ -70,12 +72,6 @@ public class windowQuestions extends javax.swing.JFrame {
 
         jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 860, 350));
 
-        btnBack.setBackground(new java.awt.Color(17, 31, 77));
-        btnBack.setFont(new java.awt.Font("Corbel", 0, 12)); // NOI18N
-        btnBack.setForeground(new java.awt.Color(255, 255, 255));
-        btnBack.setText("VOLVER");
-        jPanel3.add(btnBack, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 10, 80, -1));
-
         jLabel2.setFont(new java.awt.Font("Corbel", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(51, 51, 51));
         jLabel2.setText("¿Quiere contactarnos?");
@@ -88,7 +84,7 @@ public class windowQuestions extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel4.setText("Puede escribirnos al correo customerservice@streamtec.com o llamarnos al +506 2444 0202");
+        jLabel4.setText("Puede escribirnos los correos:        customerservice@streamtec.com   /    info@streamtec.com");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, -1, 20));
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 860, 460));
@@ -106,6 +102,26 @@ public class windowQuestions extends javax.swing.JFrame {
             }
         });
         jPanel2.add(btnExit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 40, -1));
+
+        btnRegister.setBackground(new java.awt.Color(17, 31, 77));
+        btnRegister.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        btnRegister.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegister.setText("Registrarse");
+        btnRegister.setBorder(null);
+        btnRegister.setBorderPainted(false);
+        btnRegister.setContentAreaFilled(false);
+        btnRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(btnRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 100, 20));
+
+        btnLogin.setBackground(new java.awt.Color(17, 31, 77));
+        btnLogin.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setText("Iniciar Sesión");
+        btnLogin.setBorder(null);
+        btnLogin.setBorderPainted(false);
+        btnLogin.setContentAreaFilled(false);
+        btnLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 100, 20));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, -1));
 
@@ -169,9 +185,10 @@ public class windowQuestions extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnExit1;
+    private javax.swing.JButton btnLogin;
+    private javax.swing.JButton btnRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

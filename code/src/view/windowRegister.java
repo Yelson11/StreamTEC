@@ -34,6 +34,7 @@ public class windowRegister extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton2 = new javax.swing.JButton();
+        jLabel27 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane = new javax.swing.JTabbedPane();
         jPanelUser = new javax.swing.JPanel();
@@ -77,14 +78,25 @@ public class windowRegister extends javax.swing.JFrame {
         txtName2 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
         btnQuestions = new javax.swing.JButton();
-        btnLogin = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         btnExit = new javax.swing.JButton();
+        btnLogin = new javax.swing.JButton();
 
         jButton2.setText("jButton2");
+
+        jLabel27.setText("jLabel27");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -159,12 +171,14 @@ public class windowRegister extends javax.swing.JFrame {
         btnBack1.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
         btnBack1.setForeground(new java.awt.Color(17, 31, 77));
         btnBack1.setText("REGRESAR");
+        btnBack1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelUser.add(btnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
 
         btnContinue1.setBackground(new java.awt.Color(17, 31, 77));
         btnContinue1.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
         btnContinue1.setForeground(new java.awt.Color(242, 244, 247));
         btnContinue1.setText("CONTINUAR");
+        btnContinue1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelUser.add(btnContinue1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
 
         jTabbedPane.addTab("Paso 1 ", jPanelUser);
@@ -182,20 +196,24 @@ public class windowRegister extends javax.swing.JFrame {
         btnBack2.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
         btnBack2.setForeground(new java.awt.Color(17, 31, 77));
         btnBack2.setText("REGRESAR");
+        btnBack2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(btnBack2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
 
         btnContinue2.setBackground(new java.awt.Color(17, 31, 77));
         btnContinue2.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
         btnContinue2.setForeground(new java.awt.Color(242, 244, 247));
         btnContinue2.setText("CONTINUAR");
+        btnContinue2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(btnContinue2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
 
         rdBtnPremium.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnPremium.setText("Premium");
+        rdBtnPremium.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(rdBtnPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
 
         rdBtnVideo.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnVideo.setText("Estándar Video");
+        rdBtnVideo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         rdBtnVideo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 rdBtnVideoActionPerformed(evt);
@@ -205,10 +223,12 @@ public class windowRegister extends javax.swing.JFrame {
 
         rdBtnMusic.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnMusic.setText("Estándar Música");
+        rdBtnMusic.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(rdBtnMusic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
         rdBtnBasic.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnBasic.setText("Básico");
+        rdBtnBasic.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(rdBtnBasic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
 
         jLabel12.setText("La mejor plataforma de videos en HD por tan solo $13 mensuales");
@@ -238,12 +258,14 @@ public class windowRegister extends javax.swing.JFrame {
         btnBack3.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
         btnBack3.setForeground(new java.awt.Color(17, 31, 77));
         btnBack3.setText("REGRESAR");
+        btnBack3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelPay.add(btnBack3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
 
         btnContinue3.setBackground(new java.awt.Color(17, 31, 77));
         btnContinue3.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
         btnContinue3.setForeground(new java.awt.Color(242, 244, 247));
         btnContinue3.setText("CONTINUAR");
+        btnContinue3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelPay.add(btnContinue3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
 
         jLabel16.setFont(new java.awt.Font("Corbel", 0, 18)); // NOI18N
@@ -284,33 +306,75 @@ public class windowRegister extends javax.swing.JFrame {
         jPanel1.add(jTabbedPane, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, 630, 490));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(17, 31, 77), 2, true));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Corbel", 1, 20)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(17, 31, 77));
-        jLabel2.setText("REGISTRAR USUARIO");
-        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, -1));
+        jLabel2.setText("REGISTRO DE USUARIO");
+        jPanel2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, 30));
 
-        jTextPane1.setEditable(false);
-        jTextPane1.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
-        jTextPane1.setForeground(new java.awt.Color(2, 2, 5));
-        jTextPane1.setText("\n¡Felicidades!\n\nEstás a punto de vivir una experiencia única.\n\nSólo tienes que seguir 3 sencillos pasos:\n\n> Llena tus datos personales\n\n> Elige el plan que más se adapte a ti\n\n> Confirma el método de pago\n\nY listo, vive la expericia StreamTEC.\n");
-        jTextPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jScrollPane2.setViewportView(jTextPane1);
-
-        jPanel2.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, 230, 310));
-
-        btnQuestions.setFont(new java.awt.Font("Corbel", 0, 12)); // NOI18N
+        btnQuestions.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         btnQuestions.setForeground(new java.awt.Color(17, 31, 77));
         btnQuestions.setText("Preguntas Frecuentes");
-        jPanel2.add(btnQuestions, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 380, 150, -1));
+        btnQuestions.setBorder(null);
+        btnQuestions.setBorderPainted(false);
+        btnQuestions.setContentAreaFilled(false);
+        btnQuestions.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnQuestions.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnQuestionsActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnQuestions, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 160, -1));
 
-        btnLogin.setBackground(new java.awt.Color(17, 31, 77));
-        btnLogin.setFont(new java.awt.Font("Corbel", 0, 12)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnLogin.setText("Iniciar Sesión");
-        jPanel2.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 420, 150, -1));
+        jLabel19.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel19.setText("Elige tu plan favorito");
+        jPanel2.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel20.setText("Pronto vivirás una experiencia única.");
+        jPanel2.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 220, -1));
+
+        jLabel21.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel21.setText("Sólo te quedan 3 sencillos pasos:");
+        jPanel2.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 210, -1));
+
+        jLabel22.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel22.setText("Con StreamTEC disfruta de la mejor ");
+        jPanel2.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, -1, -1));
+
+        jLabel23.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel23.setText("Llena tus datos personales");
+        jPanel2.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 150, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel24.setText("Confirma el método de pago");
+        jPanel2.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, -1, -1));
+
+        jLabel25.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel25.setText("calidad en streaming del mundo");
+        jPanel2.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 350, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Corbel", 0, 18)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel26.setText("¡Listo!");
+        jPanel2.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 280, -1, -1));
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/check.png"))); // NOI18N
+        jPanel2.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, 20, 30));
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/check.png"))); // NOI18N
+        jPanel2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 20, 30));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/check.png"))); // NOI18N
+        jPanel2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, 20, 30));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 230, 460));
 
@@ -321,12 +385,23 @@ public class windowRegister extends javax.swing.JFrame {
         btnExit.setFont(new java.awt.Font("Corbel", 1, 11)); // NOI18N
         btnExit.setForeground(new java.awt.Color(255, 255, 255));
         btnExit.setText("X");
+        btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
             }
         });
         jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 40, -1));
+
+        btnLogin.setBackground(new java.awt.Color(17, 31, 77));
+        btnLogin.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setText("Iniciar Sesión");
+        btnLogin.setBorder(null);
+        btnLogin.setBorderPainted(false);
+        btnLogin.setContentAreaFilled(false);
+        btnLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 100, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -366,6 +441,10 @@ public class windowRegister extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnQuestionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQuestionsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnQuestionsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -424,8 +503,20 @@ public class windowRegister extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -438,9 +529,7 @@ public class windowRegister extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelPay;
     private javax.swing.JPanel jPanelService;
     private javax.swing.JPanel jPanelUser;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTabbedPane jTabbedPane;
-    private javax.swing.JTextPane jTextPane1;
     private com.toedter.calendar.JYearChooser jYearChooser1;
     private javax.swing.JRadioButton rdBtnBasic;
     private javax.swing.JRadioButton rdBtnMusic;

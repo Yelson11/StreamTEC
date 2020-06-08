@@ -49,6 +49,7 @@ public class windowLogin extends javax.swing.JFrame {
         btnRegister.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         btnRegister.setForeground(new java.awt.Color(17, 31, 77));
         btnRegister.setText("REGISTRARSE");
+        btnRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnRegister.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegisterActionPerformed(evt);
@@ -60,6 +61,7 @@ public class windowLogin extends javax.swing.JFrame {
         btnExit.setFont(new java.awt.Font("Corbel", 1, 11)); // NOI18N
         btnExit.setForeground(new java.awt.Color(255, 255, 255));
         btnExit.setText("X");
+        btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
@@ -71,6 +73,7 @@ public class windowLogin extends javax.swing.JFrame {
         btnLogin.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(242, 244, 247));
         btnLogin.setText("INICIAR SESIÓN");
+        btnLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);
