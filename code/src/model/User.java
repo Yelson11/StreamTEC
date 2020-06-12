@@ -94,5 +94,12 @@ public class User {
         this.card = card;
     }
     
+    @Override
+    public String toString(){
+        String user = "";
+        user += this.name + "\n";
+        user += this.lastName;
+        return user;
+    }
     
 }

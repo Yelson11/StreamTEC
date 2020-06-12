@@ -53,8 +53,8 @@ public class LoginController implements ActionListener{
         if(validateTextAreas() == true){
             if(validateUser(windowLogin.txtEmail.getText(), windowLogin.txtPassword.getText())){
                 MainController  mainControl = MainController.getInstance();
-                mainControl.startWindow();
                 mainControl.setCurrentUser(getUserFromDB(windowLogin.txtEmail.getText(), windowLogin.txtPassword.getText()));
+                mainControl.startWindow();
                 windowLogin.hide();
             }
             else{

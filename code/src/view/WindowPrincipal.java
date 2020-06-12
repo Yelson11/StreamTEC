@@ -5,6 +5,9 @@
  */
 package view;
 
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
+
 /**
  *
  * @author Yelson
@@ -28,30 +31,76 @@ public class WindowPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        btnPlaylist = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        btnMusic = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        btnVideos = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
         btnHelp = new javax.swing.JButton();
-        btnExit = new javax.swing.JButton();
         btnConfig = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        btnAdd = new javax.swing.JButton();
+        btnPlay = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        lblService = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        jPanel2.setBackground(new java.awt.Color(17, 31, 77));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1070, 550));
-
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/logo.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 200, 50));
 
+        btnPlaylist.setBackground(new java.awt.Color(242, 244, 247));
+        btnPlaylist.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnPlaylist.setForeground(new java.awt.Color(17, 31, 77));
+        btnPlaylist.setText("Mi Lista");
+        btnPlaylist.setBorder(null);
+        btnPlaylist.setBorderPainted(false);
+        btnPlaylist.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(btnPlaylist, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 30, 80, 20));
+
+        jLabel2.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(17, 31, 77));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("|");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, 20, 20));
+
+        btnMusic.setBackground(new java.awt.Color(242, 244, 247));
+        btnMusic.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnMusic.setForeground(new java.awt.Color(17, 31, 77));
+        btnMusic.setText("Music");
+        btnMusic.setBorder(null);
+        btnMusic.setBorderPainted(false);
+        btnMusic.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(btnMusic, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 80, 20));
+
+        jLabel3.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(17, 31, 77));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("|");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 20, 20));
+
+        btnVideos.setBackground(new java.awt.Color(242, 244, 247));
+        btnVideos.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
+        btnVideos.setForeground(new java.awt.Color(17, 31, 77));
+        btnVideos.setText("Videos");
+        btnVideos.setBorder(null);
+        btnVideos.setBorderPainted(false);
+        btnVideos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        getContentPane().add(btnVideos, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 30, 80, 20));
+
+        jPanel1.setBackground(new java.awt.Color(242, 244, 247));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/help.png"))); // NOI18N
+        btnHelp.setToolTipText("Centro de ayuda");
         btnHelp.setBorder(null);
         btnHelp.setBorderPainted(false);
         btnHelp.setContentAreaFilled(false);
@@ -61,21 +110,11 @@ public class WindowPrincipal extends javax.swing.JFrame {
                 btnHelpActionPerformed(evt);
             }
         });
-        getContentPane().add(btnHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, 50, 50));
-
-        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/exit.png"))); // NOI18N
-        btnExit.setBorder(null);
-        btnExit.setBorderPainted(false);
-        btnExit.setContentAreaFilled(false);
-        btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 10, 50, 50));
+        jPanel1.add(btnHelp, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 10, 50, 50));
+        btnHelp.getAccessibleContext().setAccessibleDescription("");
 
         btnConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/config.png"))); // NOI18N
+        btnConfig.setToolTipText("Configuración de Usuario. Ajusta los datos de pago, cuenta, información...");
         btnConfig.setBorder(null);
         btnConfig.setBorderPainted(false);
         btnConfig.setContentAreaFilled(false);
@@ -85,14 +124,58 @@ public class WindowPrincipal extends javax.swing.JFrame {
                 btnConfigActionPerformed(evt);
             }
         });
-        getContentPane().add(btnConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 10, 50, 50));
+        jPanel1.add(btnConfig, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 10, 50, 50));
+
+        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/exit.png"))); // NOI18N
+        btnExit.setToolTipText("Cerrar Sesión");
+        btnExit.setBorder(null);
+        btnExit.setBorderPainted(false);
+        btnExit.setContentAreaFilled(false);
+        btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 10, 50, 50));
+
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnAdd.setBackground(new java.awt.Color(17, 31, 77));
+        btnAdd.setFont(new java.awt.Font("Corbel", 1, 15)); // NOI18N
+        btnAdd.setForeground(new java.awt.Color(255, 255, 255));
+        btnAdd.setText("Agregar a Mi Lista");
+        jPanel2.add(btnAdd, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 370, -1, 30));
+
+        btnPlay.setBackground(new java.awt.Color(17, 31, 77));
+        btnPlay.setFont(new java.awt.Font("Corbel", 1, 15)); // NOI18N
+        btnPlay.setForeground(new java.awt.Color(255, 255, 255));
+        btnPlay.setText("Reproducir");
+        jPanel2.add(btnPlay, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 370, -1, 30));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jPanel2.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 370, 340, 30));
+
+        jScrollPane1.setViewportView(jTextPane1);
+
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 670, 300));
+
+        lblService.setFont(new java.awt.Font("Corbel", 1, 26)); // NOI18N
+        lblService.setForeground(new java.awt.Color(17, 31, 77));
+        lblService.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblService.setText("MI SERVICIO");
+        jPanel2.add(lblService, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 740, -1));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 740, 420));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 580));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHelpActionPerformed
         // TODO add your handling code here:
-        System.out.println("Hola mundo");
     }//GEN-LAST:event_btnHelpActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
@@ -140,11 +223,22 @@ public class WindowPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAdd;
     private javax.swing.JButton btnConfig;
     private javax.swing.JButton btnExit;
     private javax.swing.JButton btnHelp;
+    private javax.swing.JButton btnMusic;
+    private javax.swing.JButton btnPlay;
+    private javax.swing.JButton btnPlaylist;
+    private javax.swing.JButton btnVideos;
+    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JLabel lblService;
     // End of variables declaration//GEN-END:variables
 }

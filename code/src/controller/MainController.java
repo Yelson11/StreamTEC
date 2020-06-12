@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import model.DataBase;
+import model.IMediaStrategy;
 import model.User;
 import view.WindowPrincipal;
 
@@ -40,11 +41,20 @@ public class MainController implements ActionListener{
     
     public void startWindow(){
         window.show();
+        printUserOptions();
     }
     
     // ---------------------- Métodos de UI ----------------------
     public void closeProgram(){
         System.exit(0);
+    }
+    
+    public void printUserOptions(){
+        ArrayList<IMediaStrategy> mediaList = new ArrayList<>();
+        mediaList = currentUser.getService().getMediaFromDB();
+        for(int i = 0; i < mediaList.size(); i++){
+            System.out.println(mediaList.get(i).getName());
+        }
     }
 
     

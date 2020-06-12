@@ -11,4 +11,7 @@ package model;
  */
 public interface IMediaStrategy {
     public void play();
+    public String getName();
+    public double getPrice();
+    
 }
