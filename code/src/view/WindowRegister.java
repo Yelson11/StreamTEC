@@ -9,12 +9,12 @@ package view;
  *
  * @author Yelson
  */
-public class windowRegister extends javax.swing.JFrame {
+public class WindowRegister extends javax.swing.JFrame {
 
     /**
      * Creates new form windowRegister
      */
-    public windowRegister() {
+    public WindowRegister() {
         initComponents();
         this.setLocationRelativeTo(null);
         
@@ -51,7 +51,6 @@ public class windowRegister extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        btnBack1 = new javax.swing.JButton();
         btnContinue1 = new javax.swing.JButton();
         jPanelService = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
@@ -167,19 +166,12 @@ public class windowRegister extends javax.swing.JFrame {
         jLabel9.setText("Fecha de Nacimiento:");
         jPanelUser.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, -1, 30));
 
-        btnBack1.setBackground(new java.awt.Color(204, 204, 204));
-        btnBack1.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
-        btnBack1.setForeground(new java.awt.Color(17, 31, 77));
-        btnBack1.setText("REGRESAR");
-        btnBack1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanelUser.add(btnBack1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 180, 40));
-
         btnContinue1.setBackground(new java.awt.Color(17, 31, 77));
         btnContinue1.setFont(new java.awt.Font("Corbel", 1, 16)); // NOI18N
         btnContinue1.setForeground(new java.awt.Color(242, 244, 247));
         btnContinue1.setText("CONTINUAR");
         btnContinue1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanelUser.add(btnContinue1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
+        jPanelUser.add(btnContinue1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 180, 40));
 
         jTabbedPane.addTab("Paso 1 ", jPanelUser);
 
@@ -206,11 +198,13 @@ public class windowRegister extends javax.swing.JFrame {
         btnContinue2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(btnContinue2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 180, 40));
 
+        rdBtnPremium.setBackground(new java.awt.Color(242, 244, 247));
         rdBtnPremium.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnPremium.setText("Premium");
         rdBtnPremium.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(rdBtnPremium, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
 
+        rdBtnVideo.setBackground(new java.awt.Color(242, 244, 247));
         rdBtnVideo.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnVideo.setText("Estándar Video");
         rdBtnVideo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -221,11 +215,13 @@ public class windowRegister extends javax.swing.JFrame {
         });
         jPanelService.add(rdBtnVideo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
+        rdBtnMusic.setBackground(new java.awt.Color(242, 244, 247));
         rdBtnMusic.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnMusic.setText("Estándar Música");
         rdBtnMusic.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanelService.add(rdBtnMusic, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, -1, -1));
 
+        rdBtnBasic.setBackground(new java.awt.Color(242, 244, 247));
         rdBtnBasic.setFont(new java.awt.Font("Corbel", 1, 14)); // NOI18N
         rdBtnBasic.setText("Básico");
         rdBtnBasic.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -237,7 +233,7 @@ public class windowRegister extends javax.swing.JFrame {
         jLabel13.setText("Musica y videos, todo en HD, juntos en una misma plataforma por tan solo $15 mensuales.");
         jPanelService.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
 
-        jLabel14.setText("Musica y videos a tu gusto, lleva sólo aquello que tú quieras por $8 mensuales.");
+        jLabel14.setText("Musica y videos a tu gusto, lleva sólo aquello que tú quieras y paga por producto");
         jPanelService.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, -1, -1));
 
         jLabel15.setText("Musica de la mejor calidad, lleva a tus artistas favoritos por tan solo $10 mensuales.");
@@ -391,7 +387,7 @@ public class windowRegister extends javax.swing.JFrame {
                 btnExitActionPerformed(evt);
             }
         });
-        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 40, -1));
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 10, 50, 30));
 
         btnLogin.setBackground(new java.awt.Color(17, 31, 77));
         btnLogin.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
@@ -463,36 +459,36 @@ public class windowRegister extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(windowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(windowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(windowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(windowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowRegister.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new windowRegister().setVisible(true);
+                new WindowRegister().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBack1;
-    private javax.swing.JButton btnBack2;
-    private javax.swing.JButton btnBack3;
-    private javax.swing.JButton btnContinue1;
-    private javax.swing.JButton btnContinue2;
-    private javax.swing.JButton btnContinue3;
-    private javax.swing.JButton btnExit;
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JButton btnQuestions;
+    public javax.swing.JButton btnBack2;
+    public javax.swing.JButton btnBack3;
+    public javax.swing.JButton btnContinue1;
+    public javax.swing.JButton btnContinue2;
+    public javax.swing.JButton btnContinue3;
+    public javax.swing.JButton btnExit;
+    public javax.swing.JButton btnLogin;
+    public javax.swing.JButton btnQuestions;
     private javax.swing.JButton jButton2;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    public com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -523,24 +519,24 @@ public class windowRegister extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private com.toedter.calendar.JMonthChooser jMonthChooser1;
+    public com.toedter.calendar.JMonthChooser jMonthChooser1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanelPay;
     private javax.swing.JPanel jPanelService;
     private javax.swing.JPanel jPanelUser;
-    private javax.swing.JTabbedPane jTabbedPane;
-    private com.toedter.calendar.JYearChooser jYearChooser1;
-    private javax.swing.JRadioButton rdBtnBasic;
-    private javax.swing.JRadioButton rdBtnMusic;
-    private javax.swing.JRadioButton rdBtnPremium;
-    private javax.swing.JRadioButton rdBtnVideo;
-    private javax.swing.JPasswordField txtConfirmPassword;
-    private javax.swing.JTextField txtEmail;
-    private javax.swing.JTextField txtLastName;
-    private javax.swing.JTextField txtName;
-    private javax.swing.JTextField txtName1;
-    private javax.swing.JTextField txtName2;
-    private javax.swing.JPasswordField txtPassword;
+    public javax.swing.JTabbedPane jTabbedPane;
+    public com.toedter.calendar.JYearChooser jYearChooser1;
+    public javax.swing.JRadioButton rdBtnBasic;
+    public javax.swing.JRadioButton rdBtnMusic;
+    public javax.swing.JRadioButton rdBtnPremium;
+    public javax.swing.JRadioButton rdBtnVideo;
+    public javax.swing.JPasswordField txtConfirmPassword;
+    public javax.swing.JTextField txtEmail;
+    public javax.swing.JTextField txtLastName;
+    public javax.swing.JTextField txtName;
+    public javax.swing.JTextField txtName1;
+    public javax.swing.JTextField txtName2;
+    public javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
 }

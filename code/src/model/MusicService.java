@@ -13,6 +13,12 @@ import java.util.ArrayList;
  */
 public class MusicService extends Service{
 
+    public MusicService() {
+        price = 10;
+    }
+    
+    
+
     @Override
     public ArrayList<IMediaStrategy> getMediaFromDB() {
         ArrayList<IMediaStrategy> musicList = DataBase.getInstance().getMusicList();

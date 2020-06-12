@@ -9,12 +9,12 @@ package view;
  *
  * @author Yelson
  */
-public class windowQuestions extends javax.swing.JFrame {
+public class WindowQuestions extends javax.swing.JFrame {
 
     /**
      * Creates new form windowQuestions
      */
-    public windowQuestions() {
+    public WindowQuestions() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -57,7 +57,7 @@ public class windowQuestions extends javax.swing.JFrame {
                 btnExitActionPerformed(evt);
             }
         });
-        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 40, -1));
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 10, 50, 30));
 
         jPanel2.setBackground(new java.awt.Color(17, 31, 77));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -65,7 +65,7 @@ public class windowQuestions extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(242, 244, 247));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextPane1.setBackground(new java.awt.Color(242, 244, 247));
+        jTextPane1.setEditable(false);
         jTextPane1.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         jTextPane1.setText("¿Qué es StreamTEC?\n R-/ StreamTEC es una plataforma de streaming en la que podés encontrar música y videos de la mejor calidad para tu entretenimiento.\n\n¿Cuánto cuesta StreamTEC?\n R-/ Existen varios planes que se adaptan a tus necesidades, que van desde los $8.00 hasta los $15.00 mensuales.\n\n¿Puedo utilizar la plataforma en más de un dispositivo?\n R-/ La respuesta es sí, desde nuestro plan básico en el que puedes usar hasta 2 dispositivos al mismo tiempo, hasta nuestro plan premium en el que puedes utilizar hasta 4 dispositivos a la vez.\n\n¿Qué pasa si no pago StreamTEC?\n R-/ El servicio de StreamTEC es válido por mes, cada mes el sistema de pago realiza el cobro automático de la tarjeta registrada, si en la fecha de cobro la tarjeta no posee dinero, el usuario tendrá 5 días para transferrir dinero a la cuenta de su tarjeta, si no lo hace dentro de este periodo el servicio queda suspendido.\n\n¿Puedo cancelar StreamTEC?\n R-/ Si, una vez cancelada la subscripción el cliente tendrá hasta un año para volverla a activar en caso de que quiera, si no lo hace, la cuenta se deshabilita.\n");
         jScrollPane2.setViewportView(jTextPane1);
@@ -166,29 +166,30 @@ public class windowQuestions extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(windowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(windowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(windowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(windowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowQuestions.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new windowQuestions().setVisible(true);
+                new WindowQuestions().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnExit;
+    public javax.swing.JButton btnExit;
     private javax.swing.JButton btnExit1;
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JButton btnRegister;
+    public javax.swing.JButton btnLogin;
+    public javax.swing.JButton btnRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

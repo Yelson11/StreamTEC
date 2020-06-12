@@ -13,6 +13,10 @@ import java.util.ArrayList;
  */
 public class VIPService extends Service{
 
+    public VIPService() {
+        price = 15;
+    }
+
     @Override
     public ArrayList<IMediaStrategy> getMediaFromDB() {
         ArrayList<IMediaStrategy> mediaList = new ArrayList<>();

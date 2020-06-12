@@ -36,5 +36,63 @@ public class User {
     public void addMediaFileToPlayList(IMediaStrategy pMedia){
         playList.add(pMedia);
     } 
+
+    //-------------------------- Getters and Setters --------------------------
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public IServiceStrategy getService() {
+        return service;
+    }
+
+    public void setService(IServiceStrategy service) {
+        this.service = service;
+    }
+
+    public ArrayList<IMediaStrategy> getPlayList() {
+        return playList;
+    }
+
+    public void setPlayList(ArrayList<IMediaStrategy> playList) {
+        this.playList = playList;
+    }
+
+    public PayCard getCard() {
+        return card;
+    }
+
+    public void setCard(PayCard card) {
+        this.card = card;
+    }
+    
     
 }

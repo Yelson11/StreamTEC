@@ -11,7 +11,12 @@ import java.util.ArrayList;
  *
  * @author Yelson
  */
-public class OnDemandService extends Service{
+public class BasicService extends Service{
+
+    public BasicService() {
+        price = 0;
+    }
+    
  
     @Override
     public ArrayList<IMediaStrategy> getMediaFromDB() {
@@ -21,11 +26,9 @@ public class OnDemandService extends Service{
         musicList.stream().forEach((musicList1) -> {
             mediaList.add(musicList1);
         });
-        
         videoList.stream().forEach((videoList1) -> {
             mediaList.add(videoList1);
         });
-        
         return mediaList;
     }
 }

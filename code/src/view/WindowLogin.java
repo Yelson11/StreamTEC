@@ -9,12 +9,12 @@ package view;
  *
  * @author Yelson
  */
-public class windowLogin extends javax.swing.JFrame {
+public class WindowLogin extends javax.swing.JFrame {
 
     /**
      * Creates new form windowLogin
      */
-    public windowLogin() {
+    public WindowLogin() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -39,6 +39,7 @@ public class windowLogin extends javax.swing.JFrame {
         txtEmail = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jToolBar1 = new javax.swing.JToolBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -55,7 +56,7 @@ public class windowLogin extends javax.swing.JFrame {
                 btnRegisterActionPerformed(evt);
             }
         });
-        jPanel1.add(btnRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, 210, 40));
+        jPanel1.add(btnRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 210, 40));
 
         btnExit.setBackground(new java.awt.Color(102, 0, 0));
         btnExit.setFont(new java.awt.Font("Corbel", 1, 11)); // NOI18N
@@ -67,7 +68,7 @@ public class windowLogin extends javax.swing.JFrame {
                 btnExitActionPerformed(evt);
             }
         });
-        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 40, -1));
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 10, 50, 30));
 
         btnLogin.setBackground(new java.awt.Color(17, 31, 77));
         btnLogin.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
@@ -79,45 +80,48 @@ public class windowLogin extends javax.swing.JFrame {
                 btnLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 360, 210, 40));
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, 210, 40));
 
         jLabel5.setFont(new java.awt.Font("Corbel", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(17, 31, 77));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("¿Aún no tienes una cuenta?");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 420, 420, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 430, 420, -1));
 
         txtPassword.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtPasswordActionPerformed(evt);
             }
         });
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, 210, 30));
+        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 320, 200, 30));
 
         jLabel1.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(17, 31, 77));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel1.setText("CLAVE:");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 310, 80, 30));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 320, 80, 30));
 
         jLabel4.setFont(new java.awt.Font("Corbel", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(17, 31, 77));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("CORREO:");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, 80, 30));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 80, 30));
 
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtEmailActionPerformed(evt);
             }
         });
-        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 260, 210, 30));
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 270, 200, 30));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/logoV2.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, -1, -1));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/background.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, 580));
+
+        jToolBar1.setRollover(true);
+        jPanel1.add(jToolBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 250, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -151,7 +155,6 @@ public class windowLogin extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
     }//GEN-LAST:event_btnExitActionPerformed
 
     /**
@@ -171,35 +174,37 @@ public class windowLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(windowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(windowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(windowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(windowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(WindowLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new windowLogin().setVisible(true);
+                new WindowLogin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnExit;
-    private javax.swing.JButton btnLogin;
-    private javax.swing.JButton btnRegister;
+    public javax.swing.JButton btnExit;
+    public javax.swing.JButton btnLogin;
+    public javax.swing.JButton btnRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField txtEmail;
-    private javax.swing.JPasswordField txtPassword;
+    private javax.swing.JToolBar jToolBar1;
+    public javax.swing.JTextField txtEmail;
+    public javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
 }

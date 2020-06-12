@@ -21,7 +21,9 @@ public class DataBase {
     private static DataBase database;
     
     private DataBase(){
-        
+        userList = new ArrayList<>();
+        musicList= new ArrayList<>();
+        videoList= new ArrayList<>();
     }
     
     public static DataBase getInstance(){

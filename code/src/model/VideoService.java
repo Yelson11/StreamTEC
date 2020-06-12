@@ -12,6 +12,12 @@ import java.util.ArrayList;
  * @author Yelson
  */
 public class VideoService extends Service{
+
+    public VideoService() {
+        price = 13;
+    }
+    
+    
         
     @Override
     public ArrayList<IMediaStrategy> getMediaFromDB() {
