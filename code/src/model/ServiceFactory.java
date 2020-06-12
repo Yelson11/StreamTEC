@@ -18,6 +18,8 @@ public class ServiceFactory {
                 return new VideoService();
             case "Premium":
                 return new VIPService();
+            case "Basic":
+                return new BasicService();
             default:
                 return new BasicService();
         }

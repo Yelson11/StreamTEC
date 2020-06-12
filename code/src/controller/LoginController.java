@@ -58,11 +58,11 @@ public class LoginController implements ActionListener{
                 windowLogin.hide();
             }
             else{
-                JOptionPane.showMessageDialog(null, "Usuario o Contraseña Equivocada", "", JOptionPane.INFORMATION_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Usuario o Contraseña Equivocada", "", JOptionPane.ERROR_MESSAGE);
             }
         }
         else{
-            JOptionPane.showMessageDialog(null, "Por Favor Ingrese Todos Los Datos", "", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Por Favor Ingrese Todos Los Datos", "", JOptionPane.WARNING_MESSAGE);
         }
     }
     

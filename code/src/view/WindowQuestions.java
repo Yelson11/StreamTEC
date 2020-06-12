@@ -5,6 +5,9 @@
  */
 package view;
 
+import controller.LoginController;
+import controller.RegisterController;
+
 /**
  *
  * @author Yelson
@@ -38,26 +41,25 @@ public class WindowQuestions extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        btnExit1 = new javax.swing.JButton();
-        btnRegister = new javax.swing.JButton();
-        btnLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnExit.setBackground(new java.awt.Color(102, 0, 0));
-        btnExit.setFont(new java.awt.Font("Corbel", 1, 11)); // NOI18N
+        btnExit.setBackground(new java.awt.Color(17, 31, 77));
+        btnExit.setFont(new java.awt.Font("Corbel", 1, 12)); // NOI18N
         btnExit.setForeground(new java.awt.Color(255, 255, 255));
-        btnExit.setText("X");
+        btnExit.setText("VOLVER");
+        btnExit.setBorder(null);
+        btnExit.setBorderPainted(false);
         btnExit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnExit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnExitActionPerformed(evt);
             }
         });
-        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 10, 50, 30));
+        jPanel1.add(btnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 10, 80, 40));
 
         jPanel2.setBackground(new java.awt.Color(17, 31, 77));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -92,37 +94,6 @@ public class WindowQuestions extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/logo2.png"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
-        btnExit1.setBackground(new java.awt.Color(102, 0, 0));
-        btnExit1.setFont(new java.awt.Font("Corbel", 1, 11)); // NOI18N
-        btnExit1.setForeground(new java.awt.Color(255, 255, 255));
-        btnExit1.setText("X");
-        btnExit1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExit1ActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnExit1, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 10, 40, -1));
-
-        btnRegister.setBackground(new java.awt.Color(17, 31, 77));
-        btnRegister.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
-        btnRegister.setForeground(new java.awt.Color(255, 255, 255));
-        btnRegister.setText("Registrarse");
-        btnRegister.setBorder(null);
-        btnRegister.setBorderPainted(false);
-        btnRegister.setContentAreaFilled(false);
-        btnRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(btnRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 100, 20));
-
-        btnLogin.setBackground(new java.awt.Color(17, 31, 77));
-        btnLogin.setFont(new java.awt.Font("Corbel", 0, 16)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
-        btnLogin.setText("Iniciar Sesión");
-        btnLogin.setBorder(null);
-        btnLogin.setBorderPainted(false);
-        btnLogin.setContentAreaFilled(false);
-        btnLogin.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel2.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 70, 100, 20));
-
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 860, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -141,13 +112,8 @@ public class WindowQuestions extends javax.swing.JFrame {
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        this.hide();
     }//GEN-LAST:event_btnExitActionPerformed
-
-    private void btnExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExit1ActionPerformed
-        // TODO add your handling code here:
-        System.exit(0);
-    }//GEN-LAST:event_btnExit1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -187,9 +153,6 @@ public class WindowQuestions extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton btnExit;
-    private javax.swing.JButton btnExit1;
-    public javax.swing.JButton btnLogin;
-    public javax.swing.JButton btnRegister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -19,9 +19,10 @@ public class WindowRegister extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         
         //Para que no sea permitido brincarse los pasos
-        //this.jTabbedPane.setEnabledAt(1, false);
-        //this.jTabbedPane.setSelectedIndex(0);
-        //this.jTabbedPane.setEnabledAt(2, false);
+        this.jTabbedPane.setSelectedIndex(0);
+        this.jTabbedPane.setEnabledAt(1, false);
+        this.jTabbedPane.setEnabledAt(2, false);
+        this.rdBtnPremium.setSelected(true);
     }
 
     /**
@@ -41,7 +42,7 @@ public class WindowRegister extends javax.swing.JFrame {
         txtLastName = new javax.swing.JTextField();
         txtEmail = new javax.swing.JTextField();
         txtName = new javax.swing.JTextField();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jDateChooser = new com.toedter.calendar.JDateChooser();
         txtPassword = new javax.swing.JPasswordField();
         txtConfirmPassword = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
@@ -69,12 +70,12 @@ public class WindowRegister extends javax.swing.JFrame {
         btnBack3 = new javax.swing.JButton();
         btnContinue3 = new javax.swing.JButton();
         jLabel16 = new javax.swing.JLabel();
-        txtName1 = new javax.swing.JTextField();
+        txtCardNumber = new javax.swing.JTextField();
         jMonthChooser1 = new com.toedter.calendar.JMonthChooser();
         jYearChooser1 = new com.toedter.calendar.JYearChooser();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        txtName2 = new javax.swing.JTextField();
+        txtCVV = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         btnQuestions = new javax.swing.JButton();
@@ -126,7 +127,7 @@ public class WindowRegister extends javax.swing.JFrame {
         jPanelUser.add(txtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 170, 30));
         txtName.getAccessibleContext().setAccessibleName("");
 
-        jPanelUser.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 200, 30));
+        jPanelUser.add(jDateChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 200, 30));
         jPanelUser.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 220, 150, 30));
         jPanelUser.add(txtConfirmPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 150, 30));
 
@@ -269,13 +270,13 @@ public class WindowRegister extends javax.swing.JFrame {
         jLabel16.setText("Fecha de Vencimiento:");
         jPanelPay.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, -1, 30));
 
-        txtName1.setToolTipText("");
-        txtName1.addActionListener(new java.awt.event.ActionListener() {
+        txtCardNumber.setToolTipText("");
+        txtCardNumber.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtName1ActionPerformed(evt);
+                txtCardNumberActionPerformed(evt);
             }
         });
-        jPanelPay.add(txtName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 380, 30));
+        jPanelPay.add(txtCardNumber, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 100, 380, 30));
         jPanelPay.add(jMonthChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 170, -1, 30));
         jPanelPay.add(jYearChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 60, 30));
 
@@ -289,13 +290,13 @@ public class WindowRegister extends javax.swing.JFrame {
         jLabel18.setText("CVV:");
         jPanelPay.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 40, 30));
 
-        txtName2.setToolTipText("");
-        txtName2.addActionListener(new java.awt.event.ActionListener() {
+        txtCVV.setToolTipText("");
+        txtCVV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtName2ActionPerformed(evt);
+                txtCVVActionPerformed(evt);
             }
         });
-        jPanelPay.add(txtName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 70, 30));
+        jPanelPay.add(txtCVV, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 170, 70, 30));
 
         jTabbedPane.addTab("Paso 3 ", jPanelPay);
 
@@ -425,13 +426,13 @@ public class WindowRegister extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_rdBtnVideoActionPerformed
 
-    private void txtName1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtName1ActionPerformed
+    private void txtCardNumberActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCardNumberActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtName1ActionPerformed
+    }//GEN-LAST:event_txtCardNumberActionPerformed
 
-    private void txtName2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtName2ActionPerformed
+    private void txtCVVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCVVActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtName2ActionPerformed
+    }//GEN-LAST:event_txtCVVActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
         // TODO add your handling code here:
@@ -488,7 +489,7 @@ public class WindowRegister extends javax.swing.JFrame {
     public javax.swing.JButton btnLogin;
     public javax.swing.JButton btnQuestions;
     private javax.swing.JButton jButton2;
-    public com.toedter.calendar.JDateChooser jDateChooser1;
+    public com.toedter.calendar.JDateChooser jDateChooser;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -531,12 +532,12 @@ public class WindowRegister extends javax.swing.JFrame {
     public javax.swing.JRadioButton rdBtnMusic;
     public javax.swing.JRadioButton rdBtnPremium;
     public javax.swing.JRadioButton rdBtnVideo;
+    public javax.swing.JTextField txtCVV;
+    public javax.swing.JTextField txtCardNumber;
     public javax.swing.JPasswordField txtConfirmPassword;
     public javax.swing.JTextField txtEmail;
     public javax.swing.JTextField txtLastName;
     public javax.swing.JTextField txtName;
-    public javax.swing.JTextField txtName1;
-    public javax.swing.JTextField txtName2;
     public javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
 }

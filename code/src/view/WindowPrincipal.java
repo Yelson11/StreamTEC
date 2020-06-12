@@ -46,7 +46,7 @@ public class WindowPrincipal extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(17, 31, 77));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1060, 490));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 1070, 550));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/media/images/logo.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 200, 50));

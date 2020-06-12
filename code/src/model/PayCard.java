@@ -13,6 +13,14 @@ import java.util.Date;
  */
 public class PayCard {
     private int number;
-    private Date expiryDate;
+    private String expiryDate;
     private int cvv;
+
+    public PayCard(int number, String expiryDate, int cvv) {
+        this.number = number;
+        this.expiryDate = expiryDate;
+        this.cvv = cvv;
+    }
+    
+    
 }

@@ -3,9 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/view/windowQuestions.java</file>
-            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/view/windowRegister.java</file>
-            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/view/windowPrincipal.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/model/IServiceStrategy.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/model/BasicService.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/streamtec/StreamTEC.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/model/MediaFile.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/controller/LoginController.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/controller/RegisterController.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/model/Video.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/model/VIPService.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/view/WindowQuestions.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/model/Music.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/controller/MainController.java</file>
+            <file>file:/D:/Users/Yelson/Documents/NetBeansProjects/StreamTEC/code/src/model/VideoService.java</file>
         </group>
     </open-files>
 </project-private>
