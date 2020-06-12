@@ -100,6 +100,10 @@ public class LoginController implements ActionListener{
         }
         return null;
     }
+    public void cleanWindow(){
+        windowLogin.txtEmail.setText("");
+        windowLogin.txtPassword.setText("");
+    }
 
     
     //Invocamos el método de acuerdo al evento 
@@ -110,9 +114,11 @@ public class LoginController implements ActionListener{
         }
         if(e.getSource().equals(windowLogin.btnLogin)){
             logIn();
+            cleanWindow();
         }
         if(e.getSource().equals(windowLogin.btnRegister)){
             register();
+            cleanWindow();
         }
     }
             

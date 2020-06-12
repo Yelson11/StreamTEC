@@ -11,9 +11,10 @@ import java.util.ArrayList;
  *
  * @author Yelson
  */
-public class VIPService extends Service{
+public class PremiumService extends Service{
 
-    public VIPService() {
+    public PremiumService() {
+        name = "Premium";
         price = 15;
     }
 

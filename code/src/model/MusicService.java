@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class MusicService extends Service{
 
     public MusicService() {
+        name = "Music";
         price = 10;
     }
     

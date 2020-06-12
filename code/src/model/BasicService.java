@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class BasicService extends Service{
 
     public BasicService() {
+        name = "Basic";
         price = 0;
     }
     

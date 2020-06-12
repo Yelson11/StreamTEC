@@ -14,6 +14,7 @@ import java.util.ArrayList;
 public class VideoService extends Service{
 
     public VideoService() {
+        name = "Video";
         price = 13;
     }
     

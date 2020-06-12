@@ -13,4 +13,6 @@ import java.util.ArrayList;
  */
 public interface IServiceStrategy {
     public ArrayList<IMediaStrategy> getMediaFromDB();
+    public String getName();
+    public double getPrice();
 }

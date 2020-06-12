@@ -20,12 +20,10 @@ public abstract class MediaFile implements IMediaStrategy{
         this.file = file;
     }
 
-    @Override
     public String getName() {
         return name;
     }
     
-    @Override
     public double getPrice(){
         return price;
     }

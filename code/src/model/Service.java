@@ -10,5 +10,16 @@ package model;
  * @author Yelson
  */
 public abstract class Service implements IServiceStrategy{
+    protected String name;
     protected double price;
+    
+    @Override
+    public String getName(){
+        return name;
+    };
+    
+    @Override
+    public double getPrice(){
+        return price;
+    }
 }
